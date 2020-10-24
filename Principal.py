@@ -42,16 +42,23 @@ if __name__ == '__main__':
 
     r2.Mostrar()
 
-    hr = int(input("Ingrese hora r1: "))
-    mr = int(input("Ingrese minutos r1: "))
-    sr = int(input("Ingrese segundos r1: "))
+    hr = int(input("Ingrese hora r: "))
+    mr = int(input("Ingrese minutos r: "))
+    sr = int(input("Ingrese segundos r: "))
 
     r.PonerEnHora(hr, mr, sr) #hora, minutos y segundos
 
     r.Mostrar()
 
-    input()
+    horaR = int(input("Ingresar Hora a adelantar r: "))
 
-    r.AdelantarHora #sumar 3 horas a la hora actual
+    r.AdelantarHora(horaR) #sumar 3 horas a la hora actual
 
     r.Mostrar()
+
+    horaR1 = int(input("Ingrese Hora a adelantar r1: "))
+    minutosR1 = int(input("Ingrese Minutos a adelantar r1: "))
+
+    r1.AdelantarHora(horaR,minutosR1) #sumar 1 hora y 15 minutos a la hora actual
+
+    r1.Mostrar()
